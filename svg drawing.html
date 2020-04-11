@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>lonely road</title>
+
+    <style>
+        rect {
+            fill: url("#backeffect");
+            stroke-linejoin: round;
+            stroke-width: 6;
+        }
+        
+        .moon {
+            fill: url("#mooneffect");
+        }
+        
+        footer {
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <svg viewBox="0 0 300 300">
+
+      <defs>
+      <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+        <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5"/>
+      </pattern>
+      <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+        <rect width="80" height="80" fill="url(#smallGrid)"/>
+        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1"/>
+      </pattern>
+      </defs>
+
+
+    <defs>
+    <linearGradient id="backeffect" x1=0% y1=100% x2=0% y2=0%>
+    <stop offset="0%" stop-color="#D7DA0F"/>
+    <stop offset="30%" stop-color="#E89011" />
+    <stop offset="50%" stop-color="#DA4C0F" />
+    <stop offset="70%" stop-color="#020E63" />
+    <stop offset="80%" stop-color="#010719" />
+    <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+    </defs>
+
+    <defs>
+    <radialGradient id="mooneffect" cx=50% cy=50% r=50% >
+    <stop offset="0%" stop-color="#D7DA0F"/>
+    <stop offset="30%" stop-color="#E89011" />
+    <stop offset="40%" stop-color="#CD9104" />
+     <stop offset="50%" stop-color="#BB5F09" />
+    <stop offset="60%" stop-color="#AD4407" />
+    <stop offset="70%" stop-color="#9F2909" />
+    <stop offset="80%" stop-color="#9F1709" />
+    <stop offset="100%" stop-color="#360802"/>
+    </radialGradient>
+    </defs>
+
+
+
+    <rect  width="100%" height="100%" fill="url(#grid)" stroke="black" />
+
+    <path d="M0,250 L300,250 L300,300 L0,300 Z" stroke="Black"></path>
+    <path d="M50,250 Q150,200 250,250 T300,250"></path>
+    <path d="M0,250 C4,250 50,240 80,250"></path>
+    <path d="M240,250 C4,250 50,240 300,250"></path>
+
+    <g >
+        <path d="M30,80 A34,-10 0 0,1 35,85" stroke="black" fill="none"></path>          //crow
+        <path d="M35,85 A39,-10 0 0,1 40,80" stroke="black" fill="none"></path>
+
+        <path d="M40,90 A44,-10 0 0,1 45,95" stroke="black" fill="none"></path>
+        <path d="M45,95 A49,-10 0 0,1 50,90" stroke="black" fill="none"></path>
+
+        <path d="M20,90 A24,-10 0 0,1 25,95" stroke="black" fill="none"></path>
+        <path d="M25,95 A29,-10 0 0,1 30,90" stroke="black" fill="none"></path>
+    </g>
+
+    <circle class="moon" cx="50%" cy=70 r="50"></circle>
+    
+
+
+    
+
+</svg>
+
+    <footer>
+        created by Palash 👨‍🎨
+    </footer>
+
+</body>
+
+</html>
